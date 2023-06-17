@@ -6,6 +6,14 @@ vim.opt.softtabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 
+--vim.cmd([[
+--augroup RustSettings
+--autocmd!
+--autocmd FileType rust setlocal tabstop=8 shiftwidth=8 softtabstop=8 expandtab
+--augroup END
+--]])
+
+
 vim.opt.smartindent = true
 
 vim.opt.wrap = false

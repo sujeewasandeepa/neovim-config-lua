@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+vim.g.maplocalleader = ","
 
 -- vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
@@ -31,3 +32,9 @@ vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
 vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
+
+-- tabline
+vim.keymap.set('n', '<leader>K', '<Cmd>BufferNext<CR>', opts)
+vim.keymap.set("n", "<leader>J", '<Cmd>BufferPrevious<CR>', opts)
+vim.keymap.set('n', '<leader>r', '<Cmd>BufferClose<CR>', opts)
+
